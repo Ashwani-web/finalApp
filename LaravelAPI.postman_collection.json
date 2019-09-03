@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "a64ceef9-7146-4681-9fc6-7f232b4dfade",
+		"name": "LaravelAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8088/api/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"first_name\":\"Raj\",\"last_name\":\"Aryan\",\"email\":\"rahul@gmail.com\",\"password\":\"123456\",\"password_confirmation\":\"123456\",\"gender\":\"male\",\"country\":\"IN\",\"city\":\"delhi\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8088/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/api/login",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"rahu@gmaili.com\",\"password\":\"123456\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8088/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/api/details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODA4OFwvYXBpXC9sb2dpbiIsImlhdCI6MTU1MTc4NDExMywiZXhwIjoxNTUxNzg3NzEzLCJuYmYiOjE1NTE3ODQxMTMsImp0aSI6Im1zOUppRFpHSTRBc3IyWmkiLCJzdWIiOjMsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.EYXuC6WLjIRBaRPpGAX9M5y0jf-68050ij3Kt-KcWlM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8088/api/details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/api/logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODA4OFwvYXBpXC9sb2dpbiIsImlhdCI6MTU1MTc4NDExMywiZXhwIjoxNTUxNzg3NzEzLCJuYmYiOjE1NTE3ODQxMTMsImp0aSI6Im1zOUppRFpHSTRBc3IyWmkiLCJzdWIiOjMsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.EYXuC6WLjIRBaRPpGAX9M5y0jf-68050ij3Kt-KcWlM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8088/api/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8088/api/apiregister",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"first_name\":\"Rahul\",\"last_name\":\"Rai\",\"id\":\"wxM4gY\",\"token\":\"bhjbdchjbdjjshscbshcbsjhc\",\"platform\":\"facebook\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8088/api/apiregister",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"apiregister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:8088/api/update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"1\",\"first_name\":\"Rahul\",\"last_name\":\"Rai\",\"gender\":\"male\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8088/api/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"api",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
